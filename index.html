@@ -6,34 +6,44 @@
     <title>BitNinja Technology</title>
     <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <img src="images/logo.png" alt="BitNinja Technology">
-        <div class="header-content">
-            <h1>BitNinja Technology</h1>
-        </div>
-        <nav class="header-nav">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#products" class="nav-link">Products</a>
-            <a href="https://bitninja.dev" class="nav-link" target="_blank" rel="noopener noreferrer">Blogs</a>
-            <a href="#contact" class="nav-link">Contact Us</a>
+    <header class="header">
+        <a href="#home" class="header__logo-link">
+            <img src="images/logo.png" alt="BitNinja Technology Logo" class="header__logo">
+            <img src="images/name.png" alt="BitNinja Technology" class="header__name-image">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="#home" class="header__nav-link active">Home</a></li>
+                <li><a href="#services" class="header__nav-link">Services</a></li>
+                <li><a href="#products" class="header__nav-link">Products</a></li>
+                <li><a href="https://bitninja.dev" class="header__nav-link" target="_blank" rel="noopener noreferrer">Blogs</a></li>
+                <li><a href="#contact" class="header__nav-link">Contact Us</a></li>
+            </ul>
         </nav>
-        <button class="nav-toggle" aria-label="Toggle navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="header__nav-toggle" aria-label="Toggle navigation menu">
+            <span class="header__nav-toggle-icon"></span>
+            <span class="header__nav-toggle-icon"></span>
+            <span class="header__nav-toggle-icon"></span>
         </button>
-    </div>
+    </header>
 
     <main id="page-container">
-        <section id="home" class="section">
-            <div class="section-content">
-                <h2>Industrial Automation Through Advanced Analytics</h2>
-                <p>
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <h2 class="hero__title">Industrial Automation Through Advanced Analytics</h2>
+                <p class="hero__subtitle">
                     We develop software solutions for industrial systems and manufacturing automation, enabling organisations to integrate data-driven processes, improve operational reliability and scale complex engineering workflows.
                 </p>
+                <a href="#services" class="hero__cta-button">Explore Our Solutions</a>
+            </div>
+            <div class="hero__background-overlay"></div>
+        </section>
+
+        <section id="home-details" class="section">
+            <div class="section-content">
                 <div class="section-info-grid" style="margin-top: 3rem;">
                     <article class="section-info-card">
                         <h3>Industry 4.0 Integration</h3>
@@ -68,13 +78,16 @@
         </section>
 
         <section id="services" class="section">
-            <div class="section-content">
-                <h2>IT Consultancy & Research Collaboration</h2>
-                <p>
+            <div class="section__content">
+                <h2 class="section__title">IT Consultancy & Research Collaboration</h2>
+                <p class="section__description">
                     We provide cutting-edge IT consultancy services, research and development capabilities, and infrastructure support for data-driven organizations. Our expertise spans data engineering, artificial intelligence, machine learning integration, and academic research support.
                 </p>
-                <div class="section-info-grid" style="margin-top: 3rem;">
+                <div class="section-info-grid">
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
                         <h3>Data Engineering Excellence</h3>
                         <p>
                             Our data engineering team designs and implements robust data pipelines, ETL processes, and data architecture solutions that enable organizations to harness the full potential of their data assets.
@@ -82,6 +95,9 @@
                     </article>
 
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.1 12.45"></path><path d="M16 2A10 10 0 0 1 22 12"></path></svg>
+                        </div>
                         <h3>AI/ML Integration</h3>
                         <p>
                             We specialize in integrating artificial intelligence and machine learning solutions into existing business processes, creating intelligent systems that drive innovation and competitive advantage.
@@ -89,6 +105,9 @@
                     </article>
 
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
                         <h3>Research & Development</h3>
                         <p>
                             Access our state-of-the-art research facilities and collaborate with our team of experts on cutting-edge projects that push the boundaries of technology and data science.
@@ -96,6 +115,9 @@
                     </article>
 
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
                         <h3>Academic Partnerships</h3>
                         <p>
                             We provide mentorship, guidance, and infrastructure support to academic institutions and researchers, helping bridge the gap between theoretical research and practical implementation.
@@ -106,9 +128,9 @@
         </section>
 
         <section id="products" class="section">
-            <div class="section-content">
-                <h2>Products</h2>
-                <section class="section-info-grid">
+            <div class="section__content">
+                <h2 class="section__title">Products</h2>
+                <div class="section-info-grid">
                     <article class="section-info-card product-reveal-card">
                         <div class="service-content">
                             <img class="service-image" src="images/octocad.png" alt="OctoCAD">
@@ -117,7 +139,7 @@
                             </p>
                         </div>
                         <div class="service-overlay">
-                            <p class="coming-soon">COMING SOON...</p>
+                            <p class="coming-soon">COMING SOON</p>
                         </div>
                     </article>
 
@@ -129,7 +151,7 @@
                             </p>
                         </div>
                         <div class="service-overlay">
-                            <p class="coming-soon">COMING SOON...</p>
+                            <p class="coming-soon">COMING SOON</p>
                         </div>
                     </article>
 
@@ -141,21 +163,24 @@
                             </p>
                         </div>
                         <div class="service-overlay">
-                            <p class="coming-soon">COMING SOON...</p>
+                            <p class="coming-soon">COMING SOON</p>
                         </div>
                     </article>
-                </section>
+                </div>
             </div>
         </section>
 
         <section id="contact" class="section">
-            <div class="section-content">
-                <h2>Contact Us</h2>
-                <p>
-                    We welcome inquiries regarding our industrial software solutions, engineering services, IT consultancy services, research collaborations, and academic support programs. Contact our team to discuss implementation, technical requirements, or partnership opportunities. Write us at <a href="mailto:info@bitninja.net">info@bitninja.net</a>.
+            <div class="section__content">
+                <h2 class="section__title">Contact Us</h2>
+                <p class="section__description">
+                    We welcome inquiries regarding our industrial software solutions, engineering services, IT consultancy services, research collaborations, and academic support programs. Contact our team to discuss implementation, technical requirements, or partnership opportunities.
                 </p>
-                <div class="section-info-grid" style="margin-top: 2rem;">
+                <div class="section-info-grid">
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
                         <h3>Product Demonstrations</h3>
                         <p>
                             Explore our industrial automation platform through guided demonstrations tailored to your operational requirements.
@@ -164,27 +189,36 @@
                     </article>
 
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        </div>
                         <h3>Consultation Services</h3>
                         <p>
-                            Our technical team provides consultation on system integration, implementation planning, and operational requirements to ensure successful deployment of our solutions.
+                            Our technical team provides consultation on system integration, implementation planning, and operational requirements.
                         </p>
                         <a href="mailto:info@bitninja.net?subject=Technical%20Consultation%20Request" class="cta-button">Schedule Consultation</a>
                     </article>
 
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
                         <h3>Academic Collaboration</h3>
                         <p>
-                            Access our mentorship programs, research facilities, and infrastructure support for academic institutions and individual researchers.
+                            Access our mentorship programs, research facilities, and infrastructure support for academic institutions.
                         </p>
-                        <a href="mailto:info@bitninja.net?subject=Academic%20Collaboration%20Inquiry" class="cta-button">Explore Research Opportunities</a>
+                        <a href="mailto:info@bitninja.net?subject=Academic%20Collaboration%20Inquiry" class="cta-button">Explore Research</a>
                     </article>
 
                     <article class="section-info-card">
+                        <div class="section-info-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+                        </div>
                         <h3>Strategic Partnerships</h3>
                         <p>
-                            We collaborate with systems integrators, technology partners and industry stakeholders to deliver comprehensive industrial automation solutions.
+                            We collaborate with systems integrators, technology partners and industry stakeholders to deliver solutions.
                         </p>
-                        <a href="mailto:info@bitninja.net?subject=Partnership%20Inquiry" class="cta-button">Explore Partnership Opportunities</a>
+                        <a href="mailto:info@bitninja.net?subject=Partnership%20Inquiry" class="cta-button">Explore Partnership</a>
                     </article>
                 </div>
             </div>
@@ -192,9 +226,9 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <img src="images/name.png" alt="BitNinja Technology" class="footer-logo">
-            <div class="footer-text">
+        <div class="footer__content">
+            <img src="images/name.png" alt="BitNinja Technology" class="footer__logo">
+            <div class="footer__text">
                 <p><strong>BitNinja Technology<sup>™</sup></strong> is a trademark application of BitNinja Technology (7302564), a proprietorship registered under UDYAM-MH-26-0996429. Reach us at <a href="mailto:info@bitninja.net" target="_blank" rel="noopener noreferrer">info@bitninja.net</a>.</p>
             </div>
         </div>

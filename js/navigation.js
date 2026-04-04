@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const navToggle = document.querySelector('.nav-toggle');
-  const headerNav = document.querySelector('.header-nav');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navToggle = document.querySelector('.header__nav-toggle');
+  const headerNav = document.querySelector('.header__nav');
+  const navLinks = document.querySelectorAll('.header__nav-link');
 
   navToggle.addEventListener('click', function() {
-    headerNav.classList.toggle('active');
-    navToggle.classList.toggle('active');
+    headerNav.classList.toggle('header__nav--active');
+    navToggle.classList.toggle('header__nav-toggle--active');
   });
 
   navLinks.forEach(link => {
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
           navLinks.forEach(l => l.classList.remove('active'));
           this.classList.add('active');
 
-          headerNav.classList.remove('active');
-          navToggle.classList.remove('active');
+          headerNav.classList.remove('header__nav--active');
+          navToggle.classList.remove('header__nav-toggle--active');
 
           targetSection.scrollIntoView({
             behavior: 'smooth',
