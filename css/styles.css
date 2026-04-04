@@ -324,7 +324,7 @@ body::before {
     font-size: var(--font-size-lg);
 }
 
-.service-reveal-card {
+.product-reveal-card {
     position: relative;
     overflow: hidden;
     min-height: 250px;
@@ -364,11 +364,11 @@ body::before {
     color: var(--color-primary);
 }
 
-.service-reveal-card:hover .service-content {
+.product-reveal-card:hover .service-content {
     filter: blur(0px);
 }
 
-.service-reveal-card:hover .service-overlay {
+.product-reveal-card:hover .service-overlay {
     opacity: 0;
     pointer-events: none;
 }

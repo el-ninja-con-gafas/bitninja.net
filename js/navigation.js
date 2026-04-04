@@ -10,22 +10,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
+      const href = this.getAttribute('href');
 
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
+      if (href.startsWith('#')) {
+        e.preventDefault();
 
-      if (targetSection) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
+        const targetId = href.substring(1);
+        const targetSection = document.getElementById(targetId);
 
-        headerNav.classList.remove('active');
-        navToggle.classList.remove('active');
+        if (targetSection) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
 
-        targetSection.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+          headerNav.classList.remove('active');
+          navToggle.classList.remove('active');
+
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       }
     });
   });
