@@ -1,239 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>BitNinja Technology</title>
-    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="images/logo.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
     <header class="header">
-        <a href="#home" class="header__logo-link">
-            <img src="images/logo.png" alt="BitNinja Technology Logo" class="header__logo">
-            <img src="images/name.png" alt="BitNinja Technology" class="header__name-image">
-        </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li><a href="#home" class="header__nav-link active">Home</a></li>
-                <li><a href="#services" class="header__nav-link">Services</a></li>
-                <li><a href="#products" class="header__nav-link">Products</a></li>
-                <li><a href="https://bitninja.dev" class="header__nav-link" target="_blank" rel="noopener noreferrer">Blogs</a></li>
-                <li><a href="#contact" class="header__nav-link">Contact Us</a></li>
-            </ul>
-        </nav>
-        <button class="header__nav-toggle" aria-label="Toggle navigation menu">
-            <span class="header__nav-toggle-icon"></span>
-            <span class="header__nav-toggle-icon"></span>
-            <span class="header__nav-toggle-icon"></span>
-        </button>
+      <a class="header__logo-link" href="#home">
+        <img alt="BitNinja Technology Logo" class="header__logo" src="images/logo.png" />
+        <img alt="BitNinja Technology" class="header__name-image" src="images/name.png" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li>
+            <a class="header__nav-link active" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="header__nav-link" href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#products" class="header__nav-link">Products</a>
+          </li>
+          <li>
+            <a class="header__nav-link" href="https://bitninja.dev" rel="noopener noreferrer" target="_blank">Blogs</a>
+          </li>
+          <li>
+            <a class="header__nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <button aria-label="Toggle navigation menu" class="header__nav-toggle">
+        <span class="header__nav-toggle-icon"></span>
+        <span class="header__nav-toggle-icon"></span>
+        <span class="header__nav-toggle-icon"></span>
+      </button>
     </header>
-
     <main id="page-container">
-        <section id="home" class="hero">
-            <div class="hero__content">
-                <h2 class="hero__title">Industrial Automation Through Advanced Analytics</h2>
-                <p class="hero__subtitle">
-                    We develop software solutions for industrial systems and manufacturing automation, enabling organisations to integrate data-driven processes, improve operational reliability and scale complex engineering workflows.
-                </p>
-                <a href="#services" class="hero__cta-button">Explore Our Solutions</a>
-            </div>
-            <div class="hero__background-overlay"></div>
-        </section>
-
-        <section id="home-details" class="section">
-            <div class="section-content">
-                <div class="section-info-grid" style="margin-top: 3rem;">
-                    <article class="section-info-card">
-                        <h3>Industry 4.0 Integration</h3>
-                        <p>
-                            Our platforms are architected to interoperate with modern industrial systems and control networks, enabling real-time data acquisition, advanced analytics and informed operational decision making.
-                        </p>
-                    </article>
-
-                    <article class="section-info-card">
-                        <h3>Industrial Automation</h3>
-                        <p>
-                            We optimise design workflows, manufacturing processes, and operational systems through intelligent automation, reducing manual intervention, improving precision, and enabling scalable deployment across industrial infrastructure.
-                        </p>
-                    </article>
-
-
-                    <article class="section-info-card">
-                        <h3>Predictive Analytics</h3>
-                        <p>
-                            We apply advanced analytical methods to operational data to identify patterns, predict system behaviour, and optimise performance, enabling proactive maintenance and reduction of unplanned downtime.
-                        </p>
-                    </article>
-
-                    <article class="section-info-card">
-                        <h3>Robust Partnership</h3>
-                        <p>
-                            We deliver reliable software for demanding industrial environments. Through direct client engagement, we build sustainable partnerships with continuous engineering support and seamless system interoperability.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="section">
-            <div class="section__content">
-                <h2 class="section__title">IT Consultancy & Research Collaboration</h2>
-                <p class="section__description">
-                    We provide cutting-edge IT consultancy services, research and development capabilities, and infrastructure support for data-driven organizations. Our expertise spans data engineering, artificial intelligence, machine learning integration, and academic research support.
-                </p>
-                <div class="section-info-grid">
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                        </div>
-                        <h3>Data Engineering Excellence</h3>
-                        <p>
-                            Our data engineering team designs and implements robust data pipelines, ETL processes, and data architecture solutions that enable organizations to harness the full potential of their data assets.
-                        </p>
-                    </article>
-
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.1 12.45"></path><path d="M16 2A10 10 0 0 1 22 12"></path></svg>
-                        </div>
-                        <h3>AI/ML Integration</h3>
-                        <p>
-                            We specialize in integrating artificial intelligence and machine learning solutions into existing business processes, creating intelligent systems that drive innovation and competitive advantage.
-                        </p>
-                    </article>
-
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        </div>
-                        <h3>Research & Development</h3>
-                        <p>
-                            Access our state-of-the-art research facilities and collaborate with our team of experts on cutting-edge projects that push the boundaries of technology and data science.
-                        </p>
-                    </article>
-
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        </div>
-                        <h3>Academic Partnerships</h3>
-                        <p>
-                            We provide mentorship, guidance, and infrastructure support to academic institutions and researchers, helping bridge the gap between theoretical research and practical implementation.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="products" class="section">
-            <div class="section__content">
-                <h2 class="section__title">Products</h2>
-                <div class="section-info-grid">
-                    <article class="section-info-card product-reveal-card">
-                        <div class="service-content">
-                            <img class="service-image" src="images/octocad.png" alt="OctoCAD">
-                            <p>
-                                A parametric CAD customization software that automates the process of design and CAD modelling of machine elements.
-                            </p>
-                        </div>
-                        <div class="service-overlay">
-                            <p class="coming-soon">COMING SOON</p>
-                        </div>
-                    </article>
-
-                    <article class="section-info-card product-reveal-card">
-                        <div class="service-content">
-                            <img class="service-image" src="images/octoheat.png" alt="OctoHEAT">
-                            <p>
-                                A thermal design software for automation of thermal analysis and heat transfer optimisation in manufacturing systems.
-                            </p>
-                        </div>
-                        <div class="service-overlay">
-                            <p class="coming-soon">COMING SOON</p>
-                        </div>
-                    </article>
-
-                    <article class="section-info-card product-reveal-card">
-                        <div class="service-content">
-                            <img class="service-image" src="images/octocam.png" alt="OctoCAM">
-                            <p>
-                                A CAM solution for generating optimised tool paths and CNC machine codes for precision manufacturing operations.
-                            </p>
-                        </div>
-                        <div class="service-overlay">
-                            <p class="coming-soon">COMING SOON</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="section__content">
-                <h2 class="section__title">Contact Us</h2>
-                <p class="section__description">
-                    We welcome inquiries regarding our industrial software solutions, engineering services, IT consultancy services, research collaborations, and academic support programs. Contact our team to discuss implementation, technical requirements, or partnership opportunities.
-                </p>
-                <div class="section-info-grid">
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                        <h3>Product Demonstrations</h3>
-                        <p>
-                            Explore our industrial automation platform through guided demonstrations tailored to your operational requirements.
-                        </p>
-                        <a href="mailto:info@bitninja.net?subject=Product%20Demonstration%20Request" class="cta-button">Request a Demonstration</a>
-                    </article>
-
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                        </div>
-                        <h3>Consultation Services</h3>
-                        <p>
-                            Our technical team provides consultation on system integration, implementation planning, and operational requirements.
-                        </p>
-                        <a href="mailto:info@bitninja.net?subject=Technical%20Consultation%20Request" class="cta-button">Schedule Consultation</a>
-                    </article>
-
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        </div>
-                        <h3>Academic Collaboration</h3>
-                        <p>
-                            Access our mentorship programs, research facilities, and infrastructure support for academic institutions.
-                        </p>
-                        <a href="mailto:info@bitninja.net?subject=Academic%20Collaboration%20Inquiry" class="cta-button">Explore Research</a>
-                    </article>
-
-                    <article class="section-info-card">
-                        <div class="section-info-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
-                        </div>
-                        <h3>Strategic Partnerships</h3>
-                        <p>
-                            We collaborate with systems integrators, technology partners and industry stakeholders to deliver solutions.
-                        </p>
-                        <a href="mailto:info@bitninja.net?subject=Partnership%20Inquiry" class="cta-button">Explore Partnership</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__content">
-            <img src="images/name.png" alt="BitNinja Technology" class="footer__logo">
-            <div class="footer__text">
-                <p><strong>BitNinja Technology<sup>™</sup></strong> is a trademark application of BitNinja Technology (7302564), a proprietorship registered under UDYAM-MH-26-0996429. Reach us at <a href="mailto:info@bitninja.net" target="_blank" rel="noopener noreferrer">info@bitninja.net</a>.</p>
-            </div>
+      <section class="hero" id="home">
+        <div class="hero__content">
+          <h2 class="hero__title">Industrial Automation Through Advanced Analytics</h2>
+          <p class="hero__subtitle"> We develop software solutions for industrial systems and manufacturing automation, enabling organisations to integrate data-driven processes, improve operational reliability and scale complex engineering workflows. </p>
+          <a class="hero__cta-button" href="#services">Explore Our Solutions</a>
         </div>
+        <div class="hero__background-overlay"></div>
+      </section>
+      <section class="section" id="services">
+        <div class="section__content">
+          <h2 class="section__title">Technical Consulting and Integration Services</h2>
+          <p class="section__description"> BitNinja Technology provides specialised software engineering services for manufacturing environments. We architect data platforms and develop custom design automation utilities to resolve structural inefficiencies between mechanical engineering workflows and enterprise data systems. </p>
+          <div class="section-info-grid">
+            <!-- Card 1 -->
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" x2="12" y1="22.08" y2="12"></line>
+                </svg>
+              </div>
+              <h3>Computer Aided Design Automation</h3>
+              <p>We build parametric design utilities and automation scripts that interact directly with engineering platforms. These solutions translate core mechanical principles into reliable software applications, accelerating drafting and eliminating human error.</p>
+            </article>
+            <!-- Card 2 -->
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Engineering Data Extraction</h3>
+              <p>We construct robust extraction algorithms to harvest manufacturing constraints, assembly hierarchies and geometric metadata from native engineering files, converting complex mechanical data into structured enterprise formats.</p>
+            </article>
+            <!-- Card 3 -->
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Manufacturing Data Architecture</h3>
+              <p>We design and deploy automated data workflows that transport extracted mechanical specifications into central operational databases. Our architectures enforce strict data governance and eliminate manual entry errors across engineering departments.</p>
+            </article>
+            <!-- Card 4 -->
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <h3>Systems Interoperability Consulting</h3>
+              <p>We evaluate existing engineering data architectures to identify communication bottlenecks between design software and operational databases, deploying bespoke middleware to ensure seamless data synchronisation.</p>
+            </article>
+            <!-- Card 5 (Replaced: Automated BOM) -->
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                  <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                  <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Automated Bill of Materials Synchronisation</h3>
+              <p>We engineer programmatic solutions that extract assembly structures and component quantities directly from mechanical models, ensuring enterprise resource planning systems maintain exact alignment with current design revisions.</p>
+            </article>
+            <!-- Card 6 (Replaced: Algorithmic CAM workflows) -->
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <h3>Algorithmic Manufacturing Workflows</h3>
+              <p>We develop bespoke software utilities that calculate optimised machining instructions from native surface geometries, automating the transition from digital design to physical production without manual programming.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="products" class="section">
+        <div class="section__content">
+          <h2 class="section__title">Products</h2>
+          <div class="section-info-grid">
+            <article class="section-info-card product-reveal-card">
+              <div class="service-content">
+                <img class="service-image" src="images/octocad.png" alt="OctoCAD">
+                <p> A parametric CAD customization software that automates the process of design and CAD modelling of machine elements. </p>
+              </div>
+              <div class="service-overlay">
+                <p class="coming-soon">COMING SOON</p>
+              </div>
+            </article>
+            <article class="section-info-card product-reveal-card">
+              <div class="service-content">
+                <img class="service-image" src="images/octocam.png" alt="OctoCAM">
+                <p> A CAM solution for generating optimised tool paths and CNC machine codes for precision manufacturing operations. </p>
+              </div>
+              <div class="service-overlay">
+                <p class="coming-soon">COMING SOON</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <div class="section__content">
+          <h2 class="section__title">Contact Us</h2>
+          <p class="section__description"> We welcome inquiries regarding our industrial software solutions, computer aided design automation services and manufacturing data architectures. Contact our engineering team to discuss technical requirements, system architecture planning or implementation strategies for your organisation. </p>
+          <div class="section-info-grid">
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <h3>Consultation Services</h3>
+              <p>Our technical team provides consultation on system integration, implementation planning and operational requirements.</p>
+              <a class="cta-button" href="mailto:info@bitninja.net?subject=Technical%20Consultation%20Request">Schedule Consultation</a>
+            </article>
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <h3>Architecture Planning</h3>
+              <p>Access our expertise in designing robust information architectures and governance frameworks for enterprise manufacturing systems.</p>
+              <a class="cta-button" href="mailto:info@bitninja.net?subject=Architecture%20Planning%20Inquiry">Explore Architecture</a>
+            </article>
+            <article class="section-info-card">
+              <div class="section-info-card__icon">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <polyline points="16 11 18 13 22 9"></polyline>
+                </svg>
+              </div>
+              <h3>Strategic Partnerships</h3>
+              <p>We collaborate with systems integrators and industry stakeholders to deliver highly rigorous engineering software solutions.</p>
+              <a class="cta-button" href="mailto:info@bitninja.net?subject=Partnership%20Inquiry">Explore Partnership</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <img alt="BitNinja Technology" class="footer__logo" src="images/name.png" />
+        <div class="footer__text">
+          <p>
+            <strong>BitNinja Technology <sup>™</sup>
+            </strong> is a trademark application of BitNinja Technology (7302564), a proprietorship registered under UDYAM-MH-26-0996429. Reach us at <a href="mailto:info@bitninja.net" rel="noopener noreferrer" target="_blank">info@bitninja.net</a>.
+          </p>
+        </div>
+      </div>
     </footer>
-
     <script src="js/navigation.js"></script>
-</body>
+  </body>
 </html>
