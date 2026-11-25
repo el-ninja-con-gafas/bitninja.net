@@ -1,12 +1,13 @@
-name: Build and deploy bitninja.net
+name: Build and deploy BitNinja.net
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -15,16 +16,12 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Check out bitninja.net
+      - name: Check out BitNinja.net
         uses: actions/checkout@v6
-
-      - name: Set up GitHub Pages
-        uses: actions/configure-pages@v5
+        with:
+          ref: master
 
       - name: Assemble main website
         shell: bash
@@ -35,6 +32,7 @@ jobs:
             --exclude='.git/' \
             --exclude='.github/' \
             --exclude='_site/' \
+            --exclude='documents/' \
             ./ _site/
 
       - name: Fetch the document-authenticator source
@@ -65,11 +63,18 @@ jobs:
 
           touch _site/.nojekyll
 
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish assembled website to gh-pages
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd _site
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Deploy BitNinja.net website"
+          git branch -M gh-pages
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin gh-pages
