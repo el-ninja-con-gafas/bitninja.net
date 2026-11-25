@@ -1,13 +1,17 @@
+
 name: Build and deploy BitNinja.net
 
 on:
   push:
     branches:
       - master
+  repository_dispatch:
+    types:
+      - authenticator-updated
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: pages
@@ -17,11 +21,15 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    env:
+      AUTHENTICATOR_REF: ${{ github.event.client_payload.source_sha || 'master' }}
+
     steps:
       - name: Check out BitNinja.net
         uses: actions/checkout@v6
         with:
           ref: master
+          persist-credentials: false
 
       - name: Assemble main website
         shell: bash
@@ -39,8 +47,9 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: el-ninja-con-gafas/document-authenticator
-          ref: master
+          ref: ${{ env.AUTHENTICATOR_REF }}
           path: _authenticator_source
+          token: ${{ secrets.BITNINJA_DEPLOY_TOKEN }}
           persist-credentials: false
 
       - name: Add the authenticator to the website
@@ -66,7 +75,7 @@ jobs:
       - name: Publish assembled website to gh-pages
         shell: bash
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.BITNINJA_DEPLOY_TOKEN }}
         run: |
           set -euo pipefail
           cd _site
